@@ -10,17 +10,13 @@ import java.util.List;
 @RequiredArgsConstructor
 public class WorkstationController {
     private final WorkstationRepository workstationRepository;
-
     @GetMapping("/test")
     public List<Workstation> getAllStations(){
         return workstationRepository.findAll();
     }
-
     @PostMapping("/create")
     public Workstation create(@RequestBody Workstation workstation){
-        System.out.println("HIT");
         return workstationRepository.save(workstation);
     }
-
 
 }

@@ -37,7 +37,6 @@ public class AuthService {
                 .email(request.getEmail())
                 .role("USER")
                 .build();
-
         userRepository.save(user);
     }
 

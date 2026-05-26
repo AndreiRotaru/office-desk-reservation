@@ -7,7 +7,6 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class ReservationEvent {
-
     private String username;
     private String message;
 
